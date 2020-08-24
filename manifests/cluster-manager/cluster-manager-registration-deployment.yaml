@@ -40,7 +40,7 @@ spec:
       containers:
       - name: hub-registration-controller
         image: {{ .RegistrationImage }}
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         args:
           - "/registration"
           - "controller"

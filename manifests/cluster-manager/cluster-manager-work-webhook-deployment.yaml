@@ -40,7 +40,7 @@ spec:
       containers:
       - name: {{ .ClusterManagerName }}-work-webhook-sa
         image: {{ .WorkImage }}
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         args:
           - "/work"
           - "webhook"

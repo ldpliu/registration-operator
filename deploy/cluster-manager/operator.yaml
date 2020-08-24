@@ -40,7 +40,7 @@ spec:
       containers:
       - name: registration-operator
         image: quay.io/open-cluster-management/registration-operator:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         args:
           - "/registration-operator"
           - "hub"

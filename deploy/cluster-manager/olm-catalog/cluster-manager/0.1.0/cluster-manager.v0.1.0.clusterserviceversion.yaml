@@ -234,7 +234,7 @@ spec:
                 - /registration-operator
                 - hub
                 image: quay.io/open-cluster-management/registration-operator:0.0.1
-                imagePullPolicy: IfNotPresent
+                imagePullPolicy: Always
                 livenessProbe:
                   httpGet:
                     path: /healthz
